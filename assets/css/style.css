@@ -18,6 +18,28 @@ html{
         >shape(typo, geometry shape)
 */
 
+
+/* Common class */
+
+.col{
+float: left;
+padding-left: 8px ;
+padding-right: 8px;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+
+}
+
+.col-3{
+    width: 33.33333%;
+}
+
+
+
+
 #header{
     position: fixed;
     top: 0;
@@ -140,18 +162,21 @@ color: white;
     /* text-align: center; */
 
 
-} 
+}
+
+#content .content-title{
+    text-align: center;
+}
+
 #content .content-heading{
     margin: 10px 0;
     text-transform: uppercase;
-    text-align: center;
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 4px;
 } 
 #content .content-subheading{
     margin: 15px 0;
-    text-align: center;
     font-size: 15px;
     font-style: italic;
     margin: 20px 0 ;
@@ -168,6 +193,7 @@ color: white;
     display: inline-block;
     padding: 32px 0;
     text-align: center;
+
 
 }
 
