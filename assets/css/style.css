@@ -1,0 +1,285 @@
+/*Reset CSS*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+/* 
+    Basic properties of an element:
+        >position
+        >size
+        >color
+        >shape(typo, geometry shape)
+*/
+
+#header{
+    position: fixed;
+    top: 0;
+    height: 45px;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+}
+
+#nav > li{
+    display: inline-block;
+    position: relative;
+}
+
+#header #nav {
+    display: inline-block;
+}
+
+#nav li a{
+    display:block;
+    height: 100%;
+    text-decoration: none;
+    line-height: 45px;
+    padding: 0 24px;
+}
+
+#nav > li > a{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#nav > li:hover > a,
+#nav .subNav li:hover a{
+    background-color: grey;
+    color: #000;
+}
+
+#nav .subNav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    min-width: 160px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    list-style-type: none;
+}
+
+#nav li:hover .subNav{
+    display: block;
+}
+
+
+#nav .subNav a{
+    color: black; 
+    padding: 0 16px;
+    line-height: 38px;
+}
+
+
+#header #searchBar{
+float: right;
+line-height: 45px;
+padding: 0 22px;
+color: white;
+}
+
+#header #searchBar:hover{
+    background-color: #f44336;
+}
+
+
+#slider{
+    position: relative;
+    margin-top: 45px;
+    padding-top: 48%;
+    /* When set percentage unit to padding, its take the parent's width as the source */
+    background: url("../img/img_la.jpg") top center / cover no-repeat;
+}
+
+#slider #slider-intro{
+    position: absolute;
+    color: white;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Another way for centerlize */
+    /* 1 */
+    /* width: 100%; */
+    /* 2 */
+    /* left: 0;
+    right: 0; */
+    text-align: center;
+    line-height: 50px;
+}
+
+
+#slider #slider-title{
+    font-weight: 100;
+    font-size: 24px;
+
+}
+#slider #slider-#content #content{
+    font-size: 15px;
+
+}
+
+
+
+#content{
+
+}
+
+
+#content .content-wrapper{
+    width: 800px;
+    background-color: white;
+    padding: 64px 18px;
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: center; */
+
+
+} 
+#content .content-heading{
+    margin: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+} 
+#content .content-subheading{
+    margin: 15px 0;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    margin: 20px 0 ;
+    opacity: 0.5;
+
+}
+#content #content-description{
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#content #band-member{
+    display: inline-block;
+    padding: 32px 0;
+    text-align: center;
+
+}
+
+#content .member-card{
+    float: left;
+    width: 33.333%;
+}
+
+#content .member-card p{
+    margin: 15px 0;  
+}
+
+#content .member-card img{
+    width: 60%;
+    margin: 0 0 15px;
+}
+
+#content .background-container,
+#content .background-container .content-wrapper{
+    background-color: #000;
+    color: white
+}
+
+#tour-date-wrapper{
+    width: 100%;
+    list-style-type: none;
+    text-align: left;
+    background: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+#tour-date-wrapper .tour-date{
+    padding: 8px 16px ;
+    border-bottom: 1px solid  #ddd;
+
+}
+
+
+#tour-date-wrapper .tour-date .ticket-soldout{
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 8px;
+    margin-left: 16px;
+    background-color: #f44336;
+    color: white;
+    
+}
+
+#tour-date-wrapper .tour-date .ticket-avail{
+    padding: 0 8px;
+    margin-right: 16px;
+    float: right;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+
+}
+
+
+#content #destination-wrapper{
+    padding: 32px 8px;
+    margin: 0 -16px;
+
+}
+
+#content #destination-wrapper .destination-container{
+    padding: 0 8px;
+    margin-bottom: 16px;
+    width: 33.3%;
+    float: left;
+    background-color: white;
+    color: black;
+    background-clip: content-box;
+
+
+}
+
+.clear{
+    clear: both;
+}
+
+
+#content #destination-wrapper .destination-container .city-pic{
+    width: 100%;
+}
+
+#destination-wrapper .destination-container .destination-content{
+    padding: 0.15px 16px;
+
+}
+
+.destination-container .destination-content>*{
+    margin: 15px 0;
+}
+
+.destination-container .destination-content > p:nth-child(2){
+    color: grey;
+}
+
+.destination-container .destination-content .buy_tickets{
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.destination-container .destination-content .buy_tickets:hover{
+    background-color: #ccc;
+    color: black;
+
+
+}
+
