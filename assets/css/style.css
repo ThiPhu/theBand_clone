@@ -23,8 +23,6 @@ html{
 
 .col{
 float: left;
-padding-left: 8px ;
-padding-right: 8px;
 }
 
 .row{
@@ -36,6 +34,42 @@ padding-right: 8px;
 .col-3{
     width: 33.33333%;
 }
+
+.col-2{
+    width: 50%;
+}
+
+.col-1{
+    width: 100%;
+}
+
+/* End common class */
+
+/* Common button */
+.button-b-Hg{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button-b-Hg:hover{
+    background-color: #ccc;
+    color: black;
+}
+/* End common button */
+
+/* Common padding */
+
+.padding-32{
+    padding: 32px 8px;
+}
+
+.padding-64{
+    padding: 64px 16px;
+}
+
+/* End common padding */
 
 
 
@@ -197,16 +231,12 @@ color: white;
 
 }
 
-#content .member-card{
-    float: left;
-    width: 33.333%;
-}
 
-#content .member-card p{
+#content .mem-name{
     margin: 15px 0;  
 }
 
-#content .member-card img{
+#content .mem-img{
     width: 60%;
     margin: 0 0 15px;
 }
@@ -256,15 +286,13 @@ color: white;
 
 #content #destination-wrapper{
     padding: 32px 8px;
-    margin: 0 -16px;
+    margin: 0 -8px;
 
 }
 
 #content #destination-wrapper .destination-container{
     padding: 0 8px;
     margin-bottom: 16px;
-    width: 33.3%;
-    float: left;
     background-color: white;
     color: black;
     background-clip: content-box;
@@ -294,18 +322,56 @@ color: white;
     color: grey;
 }
 
-.destination-container .destination-content .buy_tickets{
+
+.destination-container .destination-content .buy-tickets{
     margin-bottom: 16px;
     padding: 8px 16px;
-    background-color: black;
-    color: white;
-    border: none;
 }
 
-.destination-container .destination-content .buy_tickets:hover{
-    background-color: #ccc;
-    color: black;
-
-
+.contact-section{
+    display: table;
+    padding: 32px 0 ;
 }
 
+.contact{
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* Select class with "fa" */
+.contact i[class*="fa"]{
+    display: inline-block;
+    width: 30px;
+}
+
+.form-control{
+    padding: 0 8px;
+}
+
+.form-control .form-row{
+margin-bottom: 8px;
+padding: 0 8px;
+}
+
+
+
+.form-control .form-input{
+    width: 100%;
+    padding: 8px 8px;
+    /* margin: 1px 1px; */
+}
+
+.form-control input[type="submit"]{
+    float: right;
+    margin: 8px 8px 16px 0;
+    padding: 8px 16px;
+}
+
+#map{
+    position: relative;
+    margin-top: 45px;
+    padding-top: 48%;
+    /* When set percentage unit to padding, its take the parent's width as the source */
+    background: url("../img/map.jpg") top center / cover no-repeat;
+    filter: grayscale(50%);
+}

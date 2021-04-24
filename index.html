@@ -58,19 +58,19 @@
             
 
                 <div id="band-member">
-                    <div class="member-card">
-                        <p>Name</p>
-                        <img src="./assets/img/img_bandmember.jpg" alt="Band member avatar">
+                    <div class="col col-3">
+                        <p class="mem-name">Name</p>
+                        <img class="mem-img" src="./assets/img/img_bandmember.jpg" alt="Band member avatar">
                     </div>
 
-                    <div class="member-card">
-                        <p>Name</p>
-                        <img src="./assets/img/img_bandmember.jpg" alt="Band member avatar">
+                    <div class="col col-3">
+                        <p class="mem-name">Name</p>
+                        <img class="mem-img" src="./assets/img/img_bandmember.jpg" alt="Band member avatar">
                     </div>
 
-                    <div class="member-card">
-                        <p>Name</p>
-                        <img src="./assets/img/img_bandmember.jpg" alt="Band member avatar">
+                    <div class="col col-3">
+                        <p class="mem-name"> Name</p>
+                        <img class="mem-img" src="./assets/img/img_bandmember.jpg" alt="Band member avatar">
                     </div>
 
                 </div>
@@ -96,37 +96,37 @@
                     </ul>
                 
                     <div id="destination-wrapper">
-                        <div class="destination-container">
+                        <div class="col col-3 destination-container">
                             <img class="city-pic" src="./assets/img/newyork.jpg">
                             <div class="destination-content">                                 
                                 <h3>New York</h3>
                                 <p>Fri 27 Nov 2016</p>
                                 <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buy_tickets">
+                                <button class="button-b-Hg buy-tickets">
                                         Buy Tickets
                                 </button>
                             </div>
                             </div>
     
-                        <div class="destination-container">                           
+                        <div class="col col-3 destination-container">                           
                             <img class="city-pic" src="./assets/img/paris.jpg">
                             <div class="destination-content">
                                 <h3>Paris</h3>
                                 <p>Fri 27 Nov 2016</p>
                                 <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buy_tickets">
+                                <button class="button-b-Hg buy-tickets">
                                         Buy Tickets
                                 </button>
                             </div> 
                             </div>
     
-                        <div class="destination-container">
+                        <div class="col col-3 destination-container">
                             <img class="city-pic" src="./assets/img/sanfran.jpg">
                             <div class="destination-content">
                                 <h3>San Francisco</h3>
                                 <p>Fri 27 Nov 2016</p>
                                 <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buy_tickets">
+                                <button class="button-b-Hg buy-tickets">
                                       Buy Tickets
                                 </button>
                             </div>
@@ -141,28 +141,54 @@
             <!-- End tour -->
 
             <!-- Contact -->
-            <div class="content-wrapper">
-            <div class="content-title">
-                <h1 class="content-heading">CONTACT</h1>
-                <p class="content-subheading">Fan?Drop a note!</p>
+            <div class="content-wrapper ">
+                <div class="content-title">
+                    <h1 class="content-heading">CONTACT</h1>
+                    <p class="content-subheading">Fan?Drop a note!</p>
                     </div>
 
-            <table>
+                <div class="contact-section">
+                    <div class="col col-2 contact">
+                        <p><i class="fa fa-map-marker"></i>Chicago, US</p>
+                        <p><i class="fa fa-phone"></i>Phone: +00 151515</p>
+                        <p><i class="fa fa-envelope"></i>Email: mail@mail.com</p>
 
 
+                    </div>
+
+                        <form class="col col-2 form-control" action="">
+                            <div class="ex">
+                                <div class="col col-2 form-row ">
+                                    <input type="text" class="form-input" placeholder="Name" required="Name">
+                                </div>
+
+                                <div class="col col-2 form-row">
+                                    <input type="text" class="form-input" placeholder="Email" required="Email">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
 
 
-            </table>         
+                            <div class="col col-1 form-row">
+                                <input type="text" class="form-input" placeholder="Message" required="Message">
+                            </div>
 
+                            <input class="button-b-Hg" type="submit" value="SEND">
+                        </form>
 
-
+                </div>
 
             </div>
             <!-- End contact -->
-
-
         </div>
-        <div id="fotter"></div>
+        <!-- End content -->
+
+        <div id="map">
+        </div>
+
+        <div id="fotter">
+            
+        </div>
     </div>
 
     
