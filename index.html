@@ -12,18 +12,18 @@
         <div id="header">
             <!-- Begin nav -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Tour</a></li>
+                <li><a href="#" class="b-Hg">Home</a></li>
+                <li><a href="#about" class="b-Hg">Band</a></li>
+                <li><a href="#tour" class="b-Hg">Tour</a></li>
+                <li><a href="#contact" class="b-Hg">Contact</a></li>
                 <li>
-                    <a  href="">More
+                    <a  href="#" class="b-Hg">More
                         <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="subNav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
 
@@ -33,22 +33,40 @@
             <!-- End nav -->
 
             <!-- Begin search -->
-            <a href="" id="searchBar"><i class="fa fa-search"></i></a>
+            <a href="#" id="searchBar"><i class="fa fa-search"></i></a>
+            <a href="#" id="menuBar" class="b-Hg"><i class="fas fa-bars"></i></a>
             <!-- End search -->
 
         <!-- Slider -->
         </div>
-        <div id="slider">
-            <div id="slider-intro">
-                <h3 id="slider-title">Los Angeles</h3>
-                <p id="slider-content">We had the best time playing at Venice Beach!</p>
+        <div class="slider">
+            <div class="slider-intro">
+                <h3 class="slider-title">Los Angeles</h3>
+                <p class="slider-content">We had the best time playing at Venice Beach!</p>
             </div>
         </div>
+
+        </div>
+        <div class="slider">
+            <div class="slider-intro">
+                <h3 class="slider-title">New York</h3>
+                <p class="slider-content">The atmosphere in New York is lorem ipsum.</p>
+            </div>
+        </div>
+
+        </div>
+        <div class="slider">
+            <div class="slider-intro">
+                <h3 class="slider-title">Chicago</h3>
+                <p class="slider-content">Thank you, Chicago - A night we won't forget.</p>
+            </div>
+        </div>
+        
         <!-- End Slider -->
 
         <div id="content">
             <!-- About -->
-            <div class="content-wrapper">
+            <div id="about" class="content-wrapper">
                 <div class="content-title">
                 <h2 class="content-heading">The band</h2>
                 <p class="content-subheading">We love music</p>
@@ -60,17 +78,17 @@
                 <div id="band-member">
                     <div class="col col-3">
                         <p class="mem-name">Name</p>
-                        <img class="mem-img" src="./assets/img/img_bandmember.jpg" alt="Band member avatar">
+                        <img class="mem-img" src="./assets/img/img_bandmember.jpg" alt="Band member avatar" onload="this.style.opacity = 1">
                     </div>
 
                     <div class="col col-3">
                         <p class="mem-name">Name</p>
-                        <img class="mem-img" src="./assets/img/img_bandmember.jpg" alt="Band member avatar">
+                        <img class="mem-img" src="./assets/img/img_bandmember.jpg" alt="Band member avatar" onload="this.style.opacity = 1">
                     </div>
 
                     <div class="col col-3">
                         <p class="mem-name"> Name</p>
-                        <img class="mem-img" src="./assets/img/img_bandmember.jpg" alt="Band member avatar">
+                        <img class="mem-img" src="./assets/img/img_bandmember.jpg" alt="Band member avatar" onload="this.style.opacity = 1">
                     </div>
 
                 </div>
@@ -80,7 +98,7 @@
 
             <!-- Tour -->
             <div class="background-container">
-                <div class="content-wrapper">
+                <div id="tour" class="content-wrapper">
                     <div class="content-title">
                     <h2 class="content-heading">Tour Dates</h2>
                     <p class="content-subheading">Remember to book your tickets!</p>
@@ -95,14 +113,14 @@
                        
                     </ul>
                 
-                    <div id="destination-wrapper">
+                    <div id="destination-wrapper" class="row ">
                         <div class="col col-3 destination-container">
                             <img class="city-pic" src="./assets/img/newyork.jpg">
                             <div class="destination-content">                                 
                                 <h3>New York</h3>
                                 <p>Fri 27 Nov 2016</p>
                                 <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="button-b-Hg buy-tickets">
+                                <button class="b-Hg buy-tickets">
                                         Buy Tickets
                                 </button>
                             </div>
@@ -114,7 +132,7 @@
                                 <h3>Paris</h3>
                                 <p>Fri 27 Nov 2016</p>
                                 <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="button-b-Hg buy-tickets">
+                                <button class="b-Hg buy-tickets">
                                         Buy Tickets
                                 </button>
                             </div> 
@@ -126,7 +144,7 @@
                                 <h3>San Francisco</h3>
                                 <p>Fri 27 Nov 2016</p>
                                 <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="button-b-Hg buy-tickets">
+                                <button class="b-Hg buy-tickets">
                                       Buy Tickets
                                 </button>
                             </div>
@@ -141,14 +159,14 @@
             <!-- End tour -->
 
             <!-- Contact -->
-            <div class="content-wrapper ">
+            <div id="contact" class="content-wrapper ">
                 <div class="content-title">
                     <h1 class="content-heading">CONTACT</h1>
                     <p class="content-subheading">Fan?Drop a note!</p>
                     </div>
 
                 <div class="contact-section">
-                    <div class="col col-2 contact">
+                    <div class="col col-2 contact-info">
                         <p><i class="fa fa-map-marker"></i>Chicago, US</p>
                         <p><i class="fa fa-phone"></i>Phone: +00 151515</p>
                         <p><i class="fa fa-envelope"></i>Email: mail@mail.com</p>
@@ -173,7 +191,7 @@
                                 <input type="text" class="form-input" placeholder="Message" required="Message">
                             </div>
 
-                            <input class="button-b-Hg" type="submit" value="SEND">
+                            <input class="b-Hg" type="submit" value="SEND">
                         </form>
 
                 </div>
@@ -186,9 +204,15 @@
         <div id="map">
         </div>
 
-        <div id="fotter">
-            
-        </div>
+        <footer class="padding-64 center">
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-snapchat"></i></a>
+            <a href=""><i class="fab fa-pinterest-p"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"></a><u>w3.css</u></p>
+        </footer>
     </div>
 
     
@@ -197,4 +221,78 @@
 <footer>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </footer>
+
+<script>
+ //carousel
+ var slider = document.getElementById("slider");
+ var slider_tt = document.getElementById("slider-title");
+ var slider_content = document.getElementById("slider-content");
+
+
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slider");
+    let slider_arr = ['img_la.jpg','img_ny.jpg','img_ch.jpg'];
+
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+        // console.log("x["+i+"]", x[i]);
+    }
+    myIndex++;
+    // console.log("myIndex pre",myIndex);   
+    if (myIndex > x.length) {myIndex = 1} 
+    // console.log("myIndex after",myIndex);   
+    x[myIndex-1].style.display = "block";
+    x[myIndex-1].style.backgroundImage = "url('./assets/img/" + slider_arr[myIndex-1] + "'" + ")";;   
+    // console.log("myIndex display",myIndex-1);
+    setTimeout(carousel, 4000);    
+    }
+
+    
+
+ let header = document.getElementById("header");
+ let menuBtn = document.getElementById("menuBar");
+//  current header height
+ const headerH_curr = header.clientHeight;
+ 
+    menuBtn.addEventListener("click", dropSubnav);
+    //Open/close mobile menu
+    function dropSubnav(){
+        if (header.clientHeight === headerH_curr){
+            header.style.height = 'auto';
+        }
+        else{
+            //set height back to inital height = 45px
+            header.style.height = null;
+        }
+    }
+
+    // Moible: close menu when click on menu items
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+
+    for(var i =0; i <menuItems.length; i++){
+        var menuItem = menuItems[i];
+
+        menuItem.onclick = function(){
+            //to prevent hiding menu when click More
+            //distinguish item with subnav to the other.
+            var isParent = this.nextElementSibling && this.nextElementSibling.classList.contains("subNav");
+            //set height back to inital height = 45px
+            if(!isParent){
+                header.style.height = null;
+            }else{
+                //prevent element default behavior; in this case stop <a> tag navigating to href="#"
+                event.preventDefault();
+            }
+
+        }
+    }
+
+
+</script>
+
+
 </html>

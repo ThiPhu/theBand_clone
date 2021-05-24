@@ -8,6 +8,8 @@
 html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
+    scroll-behavior: smooth;
+    /* Enable smooth scrolling effect */
 }
 
 /* 
@@ -20,6 +22,10 @@ html{
 
 
 /* Common class */
+
+.center{
+    text-align: center;
+}
 
 .col{
 float: left;
@@ -46,17 +52,18 @@ float: left;
 /* End common class */
 
 /* Common button */
-.button-b-Hg{
+.b-Hg{
     background-color: black;
     color: white;
     border: none;
     cursor: pointer;
 }
 
-.button-b-Hg:hover{
-    background-color: #ccc;
-    color: black;
+.b-Hg:hover{
+    background-color: #ccc !important;
+    color: black !important;
 }
+
 /* End common button */
 
 /* Common padding */
@@ -81,8 +88,10 @@ float: left;
     width: 100%;
     background-color: black;
     z-index: 1;
+    /* overflow: hidden; */
 }
 
+/* Navigation */
 #nav > li{
     display: inline-block;
     position: relative;
@@ -107,7 +116,7 @@ float: left;
 
 #nav > li:hover > a,
 #nav .subNav li:hover a{
-    background-color: grey;
+    background-color: #ccc;
     color: #000;
 }
 
@@ -128,11 +137,14 @@ float: left;
 
 #nav .subNav a{
     color: black; 
-    padding: 0 16px;
+    padding: 0 0 0 30px;
     line-height: 38px;
 }
 
 
+
+/* End navigation */
+#header #menuBar,
 #header #searchBar{
 float: right;
 line-height: 45px;
@@ -140,20 +152,24 @@ padding: 0 22px;
 color: white;
 }
 
+#header #menuBar{
+    display: none;
+}
+
 #header #searchBar:hover{
     background-color: #f44336;
 }
 
 
-#slider{
+.slider{
     position: relative;
     margin-top: 45px;
     padding-top: 48%;
     /* When set percentage unit to padding, its take the parent's width as the source */
-    background: url("../img/img_la.jpg") top center / cover no-repeat;
+    background:  top center / cover no-repeat;
 }
 
-#slider #slider-intro{
+.slider .slider-intro{
     position: absolute;
     color: white;
     bottom: 45px;
@@ -170,32 +186,30 @@ color: white;
 }
 
 
-#slider #slider-title{
+.slider .slider-title{
     font-weight: 100;
     font-size: 24px;
 
 }
-#slider #slider-#content #content{
+.slider .slider-intro .content{
     font-size: 15px;
 
 }
 
-
-
-#content{
-
-}
-
-
-#content .content-wrapper{
+.content-wrapper{
     width: 800px;
+    max-width: 100%;
     background-color: white;
     padding: 64px 18px;
     margin-left: auto;
     margin-right: auto;
-    /* text-align: center; */
+    text-align: center;
+}
 
 
+#tour ,
+#contact{
+    width: 50rem;
 }
 
 #content .content-title{
@@ -239,6 +253,8 @@ color: white;
 #content .mem-img{
     width: 60%;
     margin: 0 0 15px;
+    opacity: 0;
+    transition-duration: 1000ms;
 }
 
 #content .background-container,
@@ -246,6 +262,8 @@ color: white;
     background-color: #000;
     color: white
 }
+
+
 
 #tour-date-wrapper{
     width: 100%;
@@ -285,8 +303,7 @@ color: white;
 
 
 #content #destination-wrapper{
-    padding: 32px 8px;
-    margin: 0 -8px;
+    padding: 32px 0px;
 
 }
 
@@ -299,6 +316,7 @@ color: white;
 
 
 }
+
 
 .clear{
     clear: both;
@@ -330,16 +348,18 @@ color: white;
 
 .contact-section{
     display: table;
+    width: 100%;
     padding: 32px 0 ;
+    font-size: 18px;
 }
 
-.contact{
-    font-size: 18px;
+.contact-info{
+    text-align: start;
     line-height: 1.4;
 }
 
 /* Select class with "fa" */
-.contact i[class*="fa"]{
+.contact-info i[class*="fa"]{
     display: inline-block;
     width: 30px;
 }
@@ -375,3 +395,80 @@ padding: 0 8px;
     background: url("../img/map.jpg") top center / cover no-repeat;
     filter: grayscale(50%);
 }
+
+footer{
+    background-color: #f1f1f1;
+}
+
+
+footer> a > i{
+    font-size: 24px;
+    color: black;
+    opacity: 0.7;
+}
+
+footer> a:hover{
+    opacity: 0.5;
+}
+
+footer>p{
+    color: grey;
+    margin: 15px 0;
+}
+
+
+/* Responsive mobile */
+@media (max-width:740px){
+
+    #nav > li{
+        display: block;
+        position: relative;
+    }
+
+    #header{
+        overflow: hidden;
+    }
+
+    /* Hide searchbar in mobile screen */
+    #header #searchBar{
+        display: none;
+    }
+
+    #header #menuBar{
+        display: inline-block;
+    }
+
+    #header #nav{
+        display: block;
+    }
+
+    #header #nav li:first-child{
+        display: inline-block;
+    }
+
+    #nav .subNav{
+        /* set initial value */
+        position: initial;
+        background-color: lightgray;
+    }
+
+    #nav .subNav a {
+        color: white;
+        padding: 5px 0 5px 30px;
+    }
+
+    /* Set menu bar ontop nav block */
+    #header #menuBar{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+
+
+} /* End responsive mobile */
+
+
+
+
+
