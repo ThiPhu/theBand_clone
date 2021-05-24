@@ -203,7 +203,7 @@ color: white;
     padding: 64px 18px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    /* text-align: center; */
 }
 
 
@@ -462,6 +462,12 @@ footer>p{
         position: absolute;
         top: 0;
         right: 0;
+    }
+
+
+    /* Responsiv column */
+    .s-col-full{
+        width: 100%;
     }
 
 
