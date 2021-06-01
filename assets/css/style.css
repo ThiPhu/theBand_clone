@@ -37,6 +37,7 @@ float: left;
 
 }
 
+
 .col-3{
     width: 33.33333%;
 }
@@ -47,6 +48,10 @@ float: left;
 
 .col-1{
     width: 100%;
+}
+
+.p-8{
+    padding: 8px;
 }
 
 /* End common class */
@@ -191,8 +196,9 @@ color: white;
     font-size: 24px;
 
 }
-.slider .slider-intro .content{
+.slider .slider-intro .slider-content{
     font-size: 15px;
+    text-shadow: 2px 2px 8px;
 
 }
 
@@ -362,15 +368,20 @@ color: white;
 .contact-info i[class*="fa"]{
     display: inline-block;
     width: 30px;
+    padding: 8px 0;
 }
 
-.form-control{
-    padding: 0 8px;
+.form__first-row, .form__second-row{
+    margin: 0 -16px;
 }
+
+.form__second-row{
+    margin-top: 8px;
+}
+
 
 .form-control .form-row{
-margin-bottom: 8px;
-padding: 0 8px;
+    padding: 0 16px;
 }
 
 
@@ -378,12 +389,12 @@ padding: 0 8px;
 .form-control .form-input{
     width: 100%;
     padding: 8px 8px;
-    /* margin: 1px 1px; */
+    margin: 1px 1px;
 }
 
 .form-control input[type="submit"]{
     float: right;
-    margin: 8px 8px 16px 0;
+    margin-top: 8px;
     padding: 8px 16px;
 }
 
@@ -398,6 +409,11 @@ padding: 0 8px;
 
 footer{
     background-color: #f1f1f1;
+    color: grey !important;
+}
+
+footer>a{
+    margin: 0 8px;
 }
 
 
@@ -412,9 +428,9 @@ footer> a:hover{
 }
 
 footer>p{
-    color: grey;
-    margin: 15px 0;
+    margin: 20px 0;
 }
+
 
 
 /* Responsive mobile */
@@ -469,6 +485,21 @@ footer>p{
     .s-col-full{
         width: 100%;
     }
+
+    .s-full-width{
+        width: 100%;
+    }
+
+
+    .form-control{
+        margin-top: 24px;
+    }
+
+    .destination-container .destination-content .buy-tickets{
+        text-align: center;
+    }
+
+
 
 
 
